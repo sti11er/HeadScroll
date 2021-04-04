@@ -88,19 +88,19 @@ function faceRotation(landmarks)
     if (rate_of_change < 0.08 || rate_of_change > - 0.08){
       if (Math.abs(heightFace/widthFace - startLen) < 0.02 && nodUp == false){
         console.log("static head");
-        //return 0;
+        return 0;
       }
     }
     if (nodDown == nodUp){
-      //return 0;
+      return 0;
     }
     if (nodUp){
       console.log("up");
-      //return "up";
+      return "up";
     }
     if (nodDown){
       console.log("down");
-      //return "down";
+      return "down";
     }
   }
 
