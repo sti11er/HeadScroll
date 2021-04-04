@@ -8,7 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
-  <script src="clmtrackr.js"></script>
+  <script src="HeadScroll.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <style>
@@ -69,8 +69,12 @@ body {
       <p>Scrolling text by tilting your head!</p>
     </div>
 
-    <div class="header" id="myHeader">
-      <h2>Head Scroll</h2>
+    <div class="row header" id="myHeader">
+      <h2 class="col-sm">Head Scroll</h2>
+      <div class="text-sm-right col-sm">
+          <button type="button" id="BtnLR" class="btn btn-outline-light mr-3">Tilt left/right</button>
+          <button type="button" id="BtnUD" class="btn btn-outline-light">Tilt up/down</button>
+      </div>
     </div>
 </div>
 <div class="container">
